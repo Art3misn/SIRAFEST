@@ -783,7 +783,7 @@ window.order =
 
 const targetDate =
   new Date(
-    "2026-09-05T06:00:00"
+    "2026-09-06T06:00:00"
   ).getTime();
 
 function updateCountdown() {
