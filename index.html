@@ -1,1098 +1,437 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jalan Santai SIRAFEST 2026 RW 04 Sirnagalih Tasikmalaya" />
+  <title>SIRAFEST 2026 · Jalan Santai</title>
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800;14..32,900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-  <meta
-    name="description"
-    content="Website resmi Jalan Santai RW 04 Sirnagalih Tasikmalaya"
-  />
-
-  <title>
-    Jalan Santai RW 04 Sirnagalih Tasikmalaya
-  </title>
-
-  <!-- GOOGLE FONT -->
-
-  <link
-    rel="preconnect"
-    href="https://fonts.googleapis.com"
-  >
-
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  >
-
-  <!-- FONT AWESOME -->
-
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-  />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
   <!-- CSS -->
-
-  <link
-    rel="stylesheet"
-    href="style.css"
-  >
-
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<!-- =========================================
-     NAVBAR
-========================================= -->
-
-<nav class="navbar">
-
-  <div class="container nav-wrapper">
-
-    <div class="logo">
-
-      <div class="logo-icon">
-        <i class="fa-solid fa-person-walking"></i>
-      </div>
-
-      <div class="logo-text">
-
-        <h1>
-          SIRAFEST 2026
-        </h1>
-
-        <span>
-          RW 04 Sirnagalih Tasikmalaya
-        </span>
-
-      </div>
-
-    </div>
-
-    <div class="menu">
-
-      <a href="#home">Beranda</a>
-      <a href="#countdown">Countdown</a>
-      <a href="#sponsor">Sponsor</a>
-      <a href="#info">Info</a>
-      <a href="#gallery">Galeri</a>
-      <a href="#faq">FAQ</a>
-      <a href="#tutorial">Tutorial</a>
-      <a href="#order">Beli Kupon</a>
-
-    </div>
-
-    <a
-      href="#order"
-      class="btn desktop-btn"
-    >
-      Beli Kupon
-    </a>
-
-    <button
-      class="hamburger"
-      id="hamburger"
-      aria-label="Buka Menu"
-      type="button"
-    >
-
-      <i class="fa-solid fa-bars"></i>
-
-    </button>
-
-  </div>
-
-</nav>
-
-<!-- =========================================
-     MOBILE SIDEBAR
-========================================= -->
-
-<div
-  class="mobile-sidebar"
-  id="mobileSidebar"
->
-
-  <div class="sidebar-top">
-
-    <h3>
-      MENU
-    </h3>
-
-    <button
-      id="closeSidebar"
-      type="button"
-      aria-label="Tutup Menu"
-    >
-
-      <i class="fa-solid fa-xmark"></i>
-
-    </button>
-
-  </div>
-
-  <a href="#home">Beranda</a>
-  <a href="#countdown">Countdown</a>
-  <a href="#sponsor">Sponsor</a>
-  <a href="#info">Info</a>
-  <a href="#gallery">Galeri</a>
-  <a href="#faq">FAQ</a>
-  <a href="#tutorial">Tutorial</a>
-  <a href="#order">Beli Kupon</a>
-
-</div>
-
-<div
-  class="sidebar-overlay"
-  id="sidebarOverlay"
-></div>
-
-<!-- =========================================
-     HERO
-========================================= -->
-
-<section
-  class="hero"
-  id="home"
->
-
-  <div class="container hero-wrapper">
-
-    <div class="hero-text">
-
-      <h5>
-        EVENT KEMERDEKAAN
-      </h5>
-
-      <h1>
-        SIRAFEST <span>2026</span>
-      </h1>
-
-      <p>
-        Pemesanan kupon jalan santai mendukung
-        pembayaran QRIS dan COD khusus wilayah
-        Kota Tasikmalaya.
-      </p>
-
-      <div class="hero-buttons">
-
-        <a
-          href="#order"
-          class="btn"
-        >
-          Beli Sekarang
-        </a>
-
-      </div>
-
-    </div>
-
-    <div class="hero-card">
-
-      <div class="ticket-badge">
-        🎟 KUPON TERBATAS
-      </div>
-
-      <h3>
-        Kupon <span>Jalan Santai</span>
-      </h3>
-
-      <div class="price">
-        Rp2.500 / kupon
-      </div>
-
-      <div class="ticket-info">
-
-        <div class="ticket-item">
-
-          <i class="fa-solid fa-location-dot"></i>
-
-          <div>
-
-            <h4>
-              Lokasi
-            </h4>
-
-            <p>
-              RW 04 Sirnagalih
-            </p>
-
-          </div>
-
+  <!-- ======== NAVBAR ======== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-wrapper">
+      <a href="#home" class="logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-person-walking"></i>
         </div>
-
-        <div class="ticket-item">
-
-          <i class="fa-solid fa-calendar"></i>
-
-          <div>
-
-            <h4>
-              Tanggal
-            </h4>
-
-            <p>
-              6 September 2026
-            </p>
-
-          </div>
-
+        <div class="logo-text">
+          <h1>SIRAFEST 2026</h1>
+          <span>RW 04 Sirnagalih</span>
         </div>
-
-        <div class="ticket-item">
-
-          <i class="fa-solid fa-gift"></i>
-
-          <div>
-
-            <h4>
-              Doorprize
-            </h4>
-
-            <p>
-              Kulkas, Mesin Cuci, Sepeda Listrik, dll.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="progress-box">
-
-        <div class="progress-top">
-
-          <span>
-            Terjual
-          </span>
-
-          <span>
-            0 / 1000
-          </span>
-
-        </div>
-
-        <div class="progress-bar">
-
-          <div class="progress"></div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- =========================================
-     COUNTDOWN
-========================================= -->
-
-<section
-  class="countdown-section"
-  id="countdown"
->
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <h5>
-        COUNTDOWN
-      </h5>
-
-      <h2>
-        Jalan Santai
-        <span>Starts In</span>
-      </h2>
-
-    </div>
-
-    <div class="countdown-wrapper">
-
-      <div class="time-box">
-
-        <h2 id="days">
-          00
-        </h2>
-
-        <p>
-          Hari
-        </p>
-
-      </div>
-
-      <div class="time-box">
-
-        <h2 id="hours">
-          00
-        </h2>
-
-        <p>
-          Jam
-        </p>
-
-      </div>
-
-      <div class="time-box">
-
-        <h2 id="minutes">
-          00
-        </h2>
-
-        <p>
-          Menit
-        </p>
-
-      </div>
-
-      <div class="time-box">
-
-        <h2 id="seconds">
-          00
-        </h2>
-
-        <p>
-          Detik
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- =========================================
-     STATS
-========================================= -->
-
-<section class="stats">
-
-  <div class="container stats-wrapper">
-
-    <div class="stat-box">
-
-      <i class="fa-solid fa-users"></i>
-
-      <h2>
-        100+
-      </h2>
-
-      <p>
-        Peserta
-      </p>
-
-    </div>
-
-    <div class="stat-box">
-
-      <i class="fa-solid fa-gift"></i>
-
-      <h2>
-        50+
-      </h2>
-
-      <p>
-        Doorprize
-      </p>
-
-    </div>
-
-    <div class="stat-box">
-
-      <i class="fa-solid fa-trophy"></i>
-
-      <h2>
-        10+
-      </h2>
-
-      <p>
-        Hadiah
-      </p>
-
-    </div>
-
-    <div class="stat-box">
-
-      <i class="fa-solid fa-calendar"></i>
-
-      <h2>
-        06 Sept 2026
-      </h2>
-
-      <p>
-        Event
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- =========================================
-     INFO EVENT
-========================================= -->
-
-<section id="info">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <h5>
-        INFORMASI EVENT
-      </h5>
-
-      <h2>
-        Tentang <span>Jalan Santai</span>
-      </h2>
-
-    </div>
-
-    <div class="info-grid">
-
-      <div class="info-card">
-
-        <i class="fa-solid fa-location-dot"></i>
-
-        <h3>
-          Lokasi
-        </h3>
-
-        <p>
-          Sirnagalih tengah RW 04 Sirnagalih,
-          Tasikmalaya
-        </p>
-
-      </div>
-
-      <div class="info-card">
-
-        <i class="fa-solid fa-calendar"></i>
-
-        <h3>
-          Tanggal
-        </h3>
-
-        <p>
-          06 September 2026
-        </p>
-
-      </div>
-
-      <div class="info-card">
-
-        <i class="fa-solid fa-clock"></i>
-
-        <h3>
-          Waktu
-        </h3>
-
-        <p>
-          06:30 - Selesai
-        </p>
-
-      </div>
-
-      <div class="info-card">
-
-        <i class="fa-solid fa-ticket"></i>
-
-        <h3>
-          Harga Kupon
-        </h3>
-
-        <p>
-          Rp2.500 / kupon
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- =========================================
-     GALLERY
-========================================= -->
-
-<section id="gallery">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <h5>
-        DOKUMENTASI
-      </h5>
-
-      <h2>
-        Galeri <span>Kegiatan</span>
-      </h2>
-
-    </div>
-
-    <div class="gallery-grid">
-
-      <img
-        src="asset/1.JPG"
-        alt="Galeri 1"
-      >
-
-      <img
-        src="asset/2.JPG"
-        alt="Galeri 2"
-      >
-
-      <img
-        src="asset/3.JPG"
-        alt="Galeri 3"
-      >
-
-      <img
-        src="asset/4.JPG"
-        alt="Galeri 4"
-      >
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- =========================================
-     FAQ
-========================================= -->
-
-<section
-  id="faq"
-  class="faq-section"
->
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <h5>
-        PERTANYAAN
-      </h5>
-
-      <h2>
-        FAQ <span>Event</span>
-      </h2>
-
-    </div>
-
-    <div class="faq-wrapper">
-
-      <!-- FAQ 1 -->
-
-      <div class="faq-item">
-
-        <button
-          class="faq-question"
-          type="button"
-        >
-
-          <span>
-            Apakah mendukung QRIS?
-          </span>
-
-          <i class="fa-solid fa-chevron-down"></i>
-
-        </button>
-
-        <div class="faq-answer">
-
-          <p>
-            Ya, pembayaran mendukung
-            QRIS maupun COD untuk
-            wilayah tertentu.
-          </p>
-
-        </div>
-
-      </div>
-
-      <!-- FAQ 2 -->
-
-      <div class="faq-item">
-
-        <button
-          class="faq-question"
-          type="button"
-        >
-
-          <span>
-            Apakah semua daerah bisa membeli?
-          </span>
-
-          <i class="fa-solid fa-chevron-down"></i>
-
-        </button>
-
-        <div class="faq-answer">
-
-          <p>
-            Tidak. Sistem hanya menerima
-            pemesanan dari area
-            Kota Tasikmalaya.
-          </p>
-
-        </div>
-
-      </div>
-
-      <!-- FAQ 3 -->
-
-      <div class="faq-item">
-
-        <button
-          class="faq-question"
-          type="button"
-        >
-
-          <span>
-            Apakah wajib menggunakan lokasi?
-          </span>
-
-          <i class="fa-solid fa-chevron-down"></i>
-
-        </button>
-
-        <div class="faq-answer">
-
-          <p>
-            Ya. Tombol gunakan lokasi wajib
-            digunakan untuk validasi area
-            pemesanan otomatis.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- =========================================
-     TUTORIAL PEMESANAN
-========================================= -->
-
-<section
-  id="tutorial"
-  class="tutorial-section"
->
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <h5>
-        TUTORIAL
-      </h5>
-
-      <h2>
-        Cara <span>Pesan Kupon</span>
-      </h2>
-
-      <p>
-        Pilih perangkat yang Anda gunakan untuk melihat panduan pemesanan kupon.
-      </p>
-
-    </div>
-
-    <div class="tutorial-buttons">
-
-      <button
-        class="tutorial-btn active"
-        data-target="desktopTutorial"
-      >
-        💻 Desktop
-      </button>
-
-      <button
-        class="tutorial-btn"
-        data-target="androidTutorial"
-      >
-        🤖 Android
-      </button>
-
-      <button
-        class="tutorial-btn"
-        data-target="iosTutorial"
-      >
-        🍎 iPhone / iOS
-      </button>
-
-    </div>
-
-    <!-- DESKTOP -->
-
-    <div
-      class="tutorial-content active"
-      id="desktopTutorial"
-    >
-     
-    <ol>
-
-        <li>
-          Buka website Jalan Santai.
-        </li>
-
-        <li>
-          Isi nama, nomor WhatsApp dan alamat lengkap.
-        </li>
-
-        <li>
-          Klik tombol Gunakan Lokasi Saya.
-        </li>
-
-        <li>
-          Masukkan jumlah kupon.
-        </li>
-
-        <li>
-          Pilih metode pembayaran QRIS atau COD.
-        </li>
-
-        <li>
-          Klik Pesan Sekarang.
-        </li>
-
-      </ol>
-
-    </div>
-
-    <!-- ANDROID -->
-
-    <div
-      class="tutorial-content"
-      id="androidTutorial"
-    >
-
-      <ol>
-
-        <li>
-          Buka website menggunakan Chrome Android.
-        </li>
-
-        <li>
-          Izinkan akses lokasi saat diminta.
-        </li>
-
-        <li>
-          Lengkapi data pemesanan.
-        </li>
-
-        <li>
-          Pilih jumlah kupon.
-        </li>
-
-        <li>
-          Pilih QRIS atau COD.
-        </li>
-
-        <li>
-          Klik Pesan Sekarang.
-        </li>
-
-      </ol>
-
-    </div>
-
-    <!-- IOS -->
-
-    <div
-      class="tutorial-content"
-      id="iosTutorial"
-    >
-
-      <ol>
-
-        <li>
-          Buka website menggunakan Safari.
-        </li>
-
-        <li>
-          Klik Izinkan saat Safari meminta lokasi.
-        </li>
-
-        <li>
-          Isi seluruh data pemesanan.
-        </li>
-
-        <li>
-          Pilih jumlah kupon.
-        </li>
-
-        <li>
-          Tentukan metode pembayaran.
-        </li>
-
-        <li>
-          Klik Pesan Sekarang.
-        </li>
-
-      </ol>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- =========================================
-     ORDER
-========================================= -->
-
-<section
-  id="order"
-  class="cod-section"
->
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <h5>
-        PEMESANAN KUPON
-      </h5>
-
-      <h2>
-        Pesan Kupon <span>Sekarang</span>
-      </h2>
-
-    </div>
-
-    <div class="cod-box">
-
-      <div class="stock-badge">
-        🔥 Sisa Kupon: 0 / 1000
-      </div>
-
-      <input
-        id="name"
-        type="text"
-        placeholder="Nama Lengkap"
-      >
-
-      <input
-        id="phone"
-        type="tel"
-        placeholder="No WhatsApp"
-      >
-
-      <input
-        id="address"
-        type="text"
-        placeholder="Alamat Lengkap"
-      >
-
-      <!-- LOKASI -->
-
-      <button
-        type="button"
-        class="location-btn"
-        id="locationBtn"
-      >
-        📍 Gunakan Lokasi Saya
-      </button>
-
-      <input
-        id="locationResult"
-        type="text"
-        placeholder="Lokasi GPS"
-        readonly
-      >
-
-      <!-- JUMLAH -->
-
-      <input
-        id="qty"
-        type="number"
-        placeholder="Jumlah Kupon (Minimal 10)"
-        min="10"
-      >
-
-      <!-- PAYMENT -->
-
-      <select id="paymentMethod">
-
-        <option value="">
-          Pilih Metode Pembayaran
-        </option>
-
-        <option value="COD">
-          COD
-        </option>
-
-        <option value="QRIS">
-          QRIS
-        </option>
-
-      </select>
-
-      <!-- QRIS -->
-
-      <div
-        class="qris-box"
-        id="qrisBox"
-      >
-
-        <h3>
-          Scan QRIS Berikut
-        </h3>
-
-        <img
-          src="asset/Qris.jpeg"
-          alt="QRIS"
-          class="qris-image"
-        >
-
-        <input
-          type="file"
-          id="buktiTf"
-          accept="image/*"
-        >
-
-        <img
-          id="previewTf"
-          class="preview-image"
-          alt="Preview Bukti Transfer"
-        >
-
-      </div>
-
-      <!-- TOTAL -->
-
-      <div
-        class="total-price"
-        aria-live="polite"
-      >
-
-        <span>
-          Total Harga:
-        </span>
-
-        <strong id="totalPrice">
-          Rp0
-        </strong>
-
-      </div>
-
-      <button
-        class="cod-btn"
-        type="button"
-        onclick="order()"
-      >
-        PESAN SEKARANG
-      </button>
-
-      <p class="order-note">
-
-        Sistem otomatis menolak
-        pemesanan dari luar
-        Kota Tasikmalaya
-
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- =========================================
-     FOOTER
-========================================= -->
-
-<footer class="footer">
-
-  <div class="container footer-wrapper">
-
-    <h3>
-      SIRAFEST 2026
-    </h3>
-
-    <p>
-      Event kemerdekaan warga
-      RW 04 Sirnagalih Tasikmalaya
-    </p>
-
-    <div class="footer-social">
-
-      <a href="https://www.instagram.com/adhigana.prapti/">
-        <i class="fa-brands fa-instagram"></i>
       </a>
 
-      <a href="https://wa.me/6287835333349">
-        <i class="fa-brands fa-whatsapp"></i>
-      </a>
+      <div class="menu" id="menuDesktop">
+        <a href="#home">Beranda</a>
+        <a href="#countdown">Countdown</a>
+        <a href="#info">Info</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#faq">FAQ</a>
+        <a href="#tutorial">Tutorial</a>
+        <a href="#order">Beli Kupon</a>
+      </div>
 
-      <a href="https://www.tiktok.com/@adhigana.prapti">
-        <i class="fa-brands fa-tiktok"></i>
-      </a>
+      <a href="#order" class="btn desktop-btn">Beli Kupon</a>
 
+      <button class="hamburger" id="hamburger" aria-label="Buka Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </div>
+  </nav>
 
-    <span>
-      © 2026 SIRAFEST
-    </span>
-
+  <!-- ======== MOBILE SIDEBAR ======== -->
+  <div class="mobile-sidebar" id="mobileSidebar">
+    <div class="sidebar-top">
+      <h3>MENU</h3>
+      <button id="closeSidebar" aria-label="Tutup Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <a href="#home">Beranda</a>
+    <a href="#countdown">Countdown</a>
+    <a href="#info">Info</a>
+    <a href="#gallery">Galeri</a>
+    <a href="#faq">FAQ</a>
+    <a href="#tutorial">Tutorial</a>
+    <a href="#order">Beli Kupon</a>
   </div>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
+  <!-- ======== HERO ======== -->
+  <section class="hero" id="home">
+    <div class="container hero-wrapper">
+      <div class="hero-text">
+        <div class="hero-tag">🎉 EVENT KEMERDEKAAN</div>
+        <h1>SIRAFEST <span>2026</span></h1>
+        <p>Pemesanan kupon jalan santai mendukung pembayaran QRIS dan COD khusus wilayah Kota Tasikmalaya.</p>
+        <div class="hero-buttons">
+          <a href="#order" class="btn btn-primary">Beli Sekarang</a>
+          <a href="#info" class="btn btn-secondary">Info Event</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="card-header">
+          <span class="ticket-badge">🎟 KUPON TERBATAS</span>
+          <h3>Kupon <span>Jalan Santai</span></h3>
+          <div class="price">Rp2.500 <span>/ kupon</span></div>
+        </div>
+
+        <div class="ticket-info">
+          <div class="ticket-item">
+            <div class="ticket-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4>Lokasi</h4>
+              <p>RW 04 Sirnagalih</p>
+            </div>
+          </div>
+          <div class="ticket-item">
+            <div class="ticket-icon"><i class="fa-solid fa-calendar"></i></div>
+            <div>
+              <h4>Tanggal</h4>
+              <p>5 September 2026</p>
+            </div>
+          </div>
+          <div class="ticket-item">
+            <div class="ticket-icon"><i class="fa-solid fa-gift"></i></div>
+            <div>
+              <h4>Doorprize</h4>
+              <p>Kulkas, Mesin Cuci, Sepeda Listrik</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="progress-box">
+          <div class="progress-top">
+            <span><i class="fa-solid fa-chart-simple"></i> Terjual</span>
+            <span id="soldText">0 / 1000</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" id="progressBar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== COUNTDOWN ======== -->
+  <section class="countdown-section" id="countdown">
+    <div class="container">
+      <div class="section-title">
+        <h5>COUNTDOWN</h5>
+        <h2>Menuju <span>Hari H</span></h2>
+        <p>Jalan Santai SIRAFEST 2026 akan segera dimulai!</p>
+      </div>
+      <div class="countdown-wrapper">
+        <div class="time-box">
+          <div class="time-number" id="days">00</div>
+          <div class="time-label">Hari</div>
+        </div>
+        <div class="time-box">
+          <div class="time-number" id="hours">00</div>
+          <div class="time-label">Jam</div>
+        </div>
+        <div class="time-box">
+          <div class="time-number" id="minutes">00</div>
+          <div class="time-label">Menit</div>
+        </div>
+        <div class="time-box">
+          <div class="time-number" id="seconds">00</div>
+          <div class="time-label">Detik</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== STATS ======== -->
+  <section class="stats">
+    <div class="container stats-wrapper">
+      <div class="stat-box">
+        <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+        <div class="stat-number">100+</div>
+        <div class="stat-label">Peserta</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-icon"><i class="fa-solid fa-gift"></i></div>
+        <div class="stat-number">50+</div>
+        <div class="stat-label">Doorprize</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-icon"><i class="fa-solid fa-trophy"></i></div>
+        <div class="stat-number">10+</div>
+        <div class="stat-label">Hadiah</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-icon"><i class="fa-solid fa-calendar"></i></div>
+        <div class="stat-number">05 Sept</div>
+        <div class="stat-label">Event</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== INFO ======== -->
+  <section id="info">
+    <div class="container">
+      <div class="section-title">
+        <h5>INFORMASI</h5>
+        <h2>Tentang <span>Jalan Santai</span></h2>
+        <p>Event tahunan warga RW 04 Sirnagalih dalam rangka memeriahkan Hari Kemerdekaan.</p>
+      </div>
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3>Lokasi</h3>
+          <p>Sirnagalih Tengah RW 04 Sirnagalih, Tasikmalaya</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon"><i class="fa-solid fa-calendar"></i></div>
+          <h3>Tanggal</h3>
+          <p>05 September 2026</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+          <h3>Waktu</h3>
+          <p>06:30 - Selesai</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon"><i class="fa-solid fa-ticket"></i></div>
+          <h3>Harga Kupon</h3>
+          <p>Rp2.500 / kupon</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== GALLERY ======== -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <div class="section-title">
+        <h5>DOKUMENTASI</h5>
+        <h2>Galeri <span>Kegiatan</span></h2>
+        <p>Momen-momen seru dari event-event sebelumnya.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="asset/1.JPG" alt="Galeri 1" />
+          <div class="gallery-overlay">
+            <span><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="asset/2.JPG" alt="Galeri 2" />
+          <div class="gallery-overlay">
+            <span><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="asset/3.JPG" alt="Galeri 3" />
+          <div class="gallery-overlay">
+            <span><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="asset/4.JPG" alt="Galeri 4" />
+          <div class="gallery-overlay">
+            <span><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FAQ ======== -->
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <div class="section-title">
+        <h5>PERTANYAAN</h5>
+        <h2>Frequently Asked <span>Questions</span></h2>
+        <p>Pertanyaan yang sering diajukan seputar event dan pemesanan kupon.</p>
+      </div>
+      <div class="faq-wrapper">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span><i class="fa-solid fa-qrcode"></i> Apakah mendukung QRIS?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Ya, pembayaran mendukung QRIS maupun COD untuk wilayah Kota Tasikmalaya.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span><i class="fa-solid fa-map-pin"></i> Apakah semua daerah bisa membeli?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Tidak. Sistem hanya menerima pemesanan dari area Kota Tasikmalaya. Validasi lokasi otomatis akan dilakukan saat pemesanan.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span><i class="fa-solid fa-location-dot"></i> Apakah wajib menggunakan lokasi?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Ya. Tombol "Gunakan Lokasi Saya" wajib digunakan untuk validasi area pemesanan otomatis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== TUTORIAL ======== -->
+  <section id="tutorial" class="tutorial-section">
+    <div class="container">
+      <div class="section-title">
+        <h5>TUTORIAL</h5>
+        <h2>Cara <span>Pesan Kupon</span></h2>
+        <p>Pilih perangkat yang Anda gunakan untuk melihat panduan pemesanan kupon.</p>
+      </div>
+      <div class="tutorial-buttons">
+        <button class="tutorial-btn active" data-target="desktopTutorial">💻 Desktop</button>
+        <button class="tutorial-btn" data-target="androidTutorial">🤖 Android</button>
+        <button class="tutorial-btn" data-target="iosTutorial">🍎 iPhone / iOS</button>
+      </div>
+      <div class="tutorial-content active" id="desktopTutorial">
+        <ol>
+          <li>Buka website Jalan Santai SIRAFEST 2026.</li>
+          <li>Isi nama lengkap, nomor WhatsApp, dan alamat lengkap.</li>
+          <li>Klik tombol <strong>"Gunakan Lokasi Saya"</strong> untuk verifikasi.</li>
+          <li>Masukkan jumlah kupon yang ingin dibeli (minimal 10).</li>
+          <li>Pilih metode pembayaran <strong>QRIS</strong> atau <strong>COD</strong>.</li>
+          <li>Klik <strong>"PESAN SEKARANG"</strong> dan ikuti instruksi selanjutnya.</li>
+        </ol>
+      </div>
+      <div class="tutorial-content" id="androidTutorial">
+        <ol>
+          <li>Buka website menggunakan browser <strong>Chrome</strong> di Android.</li>
+          <li>Izinkan akses lokasi saat diminta oleh browser.</li>
+          <li>Lengkapi data pemesanan (nama, WA, alamat).</li>
+          <li>Pilih jumlah kupon yang diinginkan (minimal 10).</li>
+          <li>Pilih metode pembayaran <strong>QRIS</strong> atau <strong>COD</strong>.</li>
+          <li>Klik <strong>"PESAN SEKARANG"</strong> dan selesaikan pembayaran.</li>
+        </ol>
+      </div>
+      <div class="tutorial-content" id="iosTutorial">
+        <ol>
+          <li>Buka website menggunakan browser <strong>Safari</strong> di iPhone.</li>
+          <li>Klik <strong>"Izinkan"</strong> saat Safari meminta akses lokasi.</li>
+          <li>Isi seluruh data pemesanan dengan lengkap.</li>
+          <li>Masukkan jumlah kupon yang ingin dibeli (minimal 10).</li>
+          <li>Tentukan metode pembayaran <strong>QRIS</strong> atau <strong>COD</strong>.</li>
+          <li>Klik <strong>"PESAN SEKARANG"</strong> dan ikuti proses pembayaran.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== ORDER ======== -->
+  <section id="order" class="order-section">
+    <div class="container">
+      <div class="section-title">
+        <h5>PEMESANAN</h5>
+        <h2>Pesan Kupon <span>Sekarang</span></h2>
+        <p>Isi data diri Anda dengan lengkap untuk memesan kupon jalan santai.</p>
+      </div>
+      <div class="order-wrapper">
+        <div class="cod-box">
+          <div class="stock-badge" id="stockBadge">🔥 Sisa Kupon: 1000 / 1000</div>
+
+          <div class="form-group">
+            <label><i class="fa-solid fa-user"></i> Nama Lengkap</label>
+            <input id="name" type="text" placeholder="Masukkan nama lengkap" />
+          </div>
+
+          <div class="form-group">
+            <label><i class="fa-brands fa-whatsapp"></i> No WhatsApp</label>
+            <input id="phone" type="tel" placeholder="08xxxxxxxxxx" />
+          </div>
+
+          <div class="form-group">
+            <label><i class="fa-solid fa-location-dot"></i> Alamat Lengkap</label>
+            <input id="address" type="text" placeholder="Jl. ... RT/RW ..." />
+          </div>
+
+          <div class="form-group">
+            <label><i class="fa-solid fa-map"></i> Verifikasi Lokasi</label>
+            <button type="button" class="location-btn" id="locationBtn">📍 Gunakan Lokasi Saya</button>
+            <input id="locationResult" type="text" placeholder="Belum diverifikasi" readonly />
+          </div>
+
+          <div class="form-group">
+            <label><i class="fa-solid fa-ticket"></i> Jumlah Kupon</label>
+            <input id="qty" type="number" placeholder="Minimal 10 kupon" min="10" />
+          </div>
+
+          <div class="form-group">
+            <label><i class="fa-solid fa-credit-card"></i> Metode Pembayaran</label>
+            <select id="paymentMethod">
+              <option value="">Pilih Metode</option>
+              <option value="COD">COD (Bayar di Tempat)</option>
+              <option value="QRIS">QRIS (Transfer)</option>
+            </select>
+          </div>
+
+          <div class="qris-box" id="qrisBox">
+            <h3>📱 Scan QRIS Berikut</h3>
+            <img src="asset/Qris.jpeg" alt="QRIS" class="qris-image" />
+            <p class="qris-note">Upload bukti transfer setelah melakukan pembayaran</p>
+            <input type="file" id="buktiTf" accept="image/*" />
+            <img id="previewTf" class="preview-image" alt="Preview Bukti Transfer" />
+          </div>
+
+          <div class="total-price">
+            <span>Total Harga:</span>
+            <strong id="totalPrice">Rp0</strong>
+          </div>
+
+          <button class="cod-btn" type="button" onclick="order()">
+            <i class="fa-solid fa-paper-plane"></i> PESAN SEKARANG
+          </button>
+          <p class="order-note">⚠️ Sistem otomatis menolak pemesanan dari luar Kota Tasikmalaya</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SUCCESS MODAL ======== -->
   <div id="successModal" class="success-modal">
-  <div class="success-card">
-    <div class="success-icon">🎉</div>
-
-    <h2>Pesanan Berhasil!</h2>
-
-    <p>
-      Terima kasih telah melakukan pemesanan.
-      Data Anda sudah tersimpan dan akan segera diproses panitia.
-    </p>
-
-    <button onclick="closeSuccessModal()">
-      Tutup
-    </button>
+    <div class="success-card">
+      <div class="success-icon">🎉</div>
+      <h2>Pesanan Berhasil!</h2>
+      <p>Terima kasih telah melakukan pemesanan. Data Anda sudah tersimpan dan akan segera diproses panitia.</p>
+      <button onclick="closeSuccessModal()"><i class="fa-solid fa-check"></i> Tutup</button>
+    </div>
   </div>
-</div>
 
-</footer>
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="container footer-wrapper">
+      <div class="footer-brand">
+        <h3>SIRAFEST 2026</h3>
+        <p>Event kemerdekaan warga RW 04 Sirnagalih Tasikmalaya</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/adhigana.prapti/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/6287835333349" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.tiktok.com/@adhigana.prapti" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+      <span class="footer-copy">© 2026 SIRAFEST · RW 04 Sirnagalih</span>
+    </div>
+  </footer>
 
-<!-- =========================================
-     SCRIPT
-========================================= -->
-
-<script
-  type="module"
-  src="script.js"
-></script>
-
+  <!-- ======== SCRIPTS ======== -->
+  <script type="module" src="script.js"></script>
 </body>
 </html>
